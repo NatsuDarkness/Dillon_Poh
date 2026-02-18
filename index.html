@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dillon Poh — Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css"/>
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav id="navbar">
+    <div class="nav-brand">
+      <span class="brand-icon">DP</span>
+      <span class="brand-name">Dillon Poh</span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#home" class="active">Home</a></li>
+      <li><a href="#about">About Me</a></li>
+      <li><a href="#projects">My Projects</a></li>
+      <li><a href="#contact">Contact Me</a></li>
+    </ul>
+    <a href="Dillon_Poh_Resume.pdf" class="btn-outline" download target="_blank" rel="noopener">↓ Download Resume</a>
+    <button class="hamburger" id="hamburger">&#9776;</button>
+  </nav>
+
+  <!-- HERO -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <span class="badge">● AVAILABLE FOR OPPORTUNITIES</span>
+      <h1 class="hero-title">
+        Hi, I'm<br>
+        <span class="accent">Dillon Poh,</span>
+      </h1>
+      <p class="hero-sub">
+        and I'm an undergraduate from
+        <a href="#" class="inline-link">Diploma in Information Technology</a>
+        — building real-world web apps and network systems.
+      </p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn-primary">View My Work →</a>
+        <a href="#contact" class="btn-ghost">Get in Touch</a>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="tri-wrap">
+        <div class="tri tri-1"></div>
+        <div class="tri tri-2"></div>
+        <div class="tri tri-3"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="about section">
+    <div class="container">
+      <p class="section-eyebrow">— WHO I AM</p>
+      <h2 class="section-title">About Me</h2>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>I'm a passionate IT student focused on building functional, user-friendly web applications and network solutions. I love turning ideas into real products that make a difference.</p>
+          <p>Currently studying my Diploma in Information Technology, I've worked on projects ranging from full-stack web apps to network infrastructure setups.</p>
+          <div class="skills-list">
+            <span>HTML / CSS</span><span>JavaScript</span><span>Python</span>
+            <span>Flask</span><span>React</span><span>Networking</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="projects section">
+    <div class="container">
+      <p class="section-eyebrow">— WHAT I'VE BUILT</p>
+      <h2 class="section-title">My Projects</h2>
+
+      <!-- Featured Project -->
+      <div class="featured-project">
+        <div class="feat-label">
+          <span class="line-accent"></span>
+          <span class="eyebrow-sm">DEEP DIVE</span>
+          <span class="badge-feat">★ FEATURED PROJECT</span>
+        </div>
+        <h3 class="feat-title">ResumePortal — Inside the Build</h3>
+        <p class="feat-desc">A tour through each screen and feature of the platform, showing what it does and how it works.</p>
+
+        <!-- Slideshow -->
+        <div class="slideshow" id="slideshow">
+          <div class="slide active">
+            <div class="slide-img-placeholder">
+              <img src="Dashboard.jpeg" alt="Dashboard screenshot" loading="lazy" />
+            </div>
+            <div class="slide-caption">
+              <p class="screen-num">SCREEN 1 OF 6</p>
+              <h4>Dashboard Overview</h4>
+              <p>Get a bird's-eye view of your analyses, match scores, and resume statuses at a glance.</p>
+              <ul>
+                <li> Live match score tracking</li>
+                <li> Recent activity feed</li>
+                <li> Quick-action shortcuts</li>
+              </ul>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="slide-img-placeholder">
+              <img src="Job Analysis.jpeg" alt="Job analysis screenshot" loading="lazy" />
+            </div>
+            <div class="slide-caption">
+              <p class="screen-num">SCREEN 2 OF 6</p>
+              <h4>Job Analysis</h4>
+              <p>Paste any job description and let AI extract key requirements and match them to your resume.</p>
+              <ul>
+                <li> Keyword extraction</li>
+                <li> Skills gap analysis</li>
+                <li> Role fit scoring</li>
+              </ul>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="slide-img-placeholder resume-mgmt">
+              <img src="Resume Management.jpeg" alt="Resume management screenshot" loading="lazy" />
+            </div>
+            <div class="slide-caption">
+              <p class="screen-num">SCREEN 3 OF 6</p>
+              <h4>Resume Management</h4>
+              <p>Upload, build with AI, or import from LinkedIn. Manage multiple resume versions and filter by format (PDF, DOCX, TXT).</p>
+              <ul>
+                <li> Multi-format resume upload (PDF, DOCX, TXT)</li>
+                <li> AI-powered resume builder</li>
+                <li> LinkedIn profile import</li>
+                <li> Preview, edit, AI-edit, analyze, and delete actions</li>
+              </ul>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="slide-img-placeholder">
+              <img src="Match score.jpeg" alt="Match scores screenshot" loading="lazy" />
+            </div>
+            <div class="slide-caption">
+              <p class="screen-num">SCREEN 4 OF 6</p>
+              <h4>Match Scores</h4>
+              <p>See a detailed breakdown of how well your resume aligns with each job posting.</p>
+              <ul>
+                <li> Percentage match visualization</li>
+                <li> Section-by-section scoring</li>
+                <li> Comparison across resumes</li>
+              </ul>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="slide-img-placeholder">
+              <img src="Improvements.jpeg" alt="Improvements screenshot" loading="lazy" />
+            </div>
+            <div class="slide-caption">
+              <p class="screen-num">SCREEN 5 OF 6</p>
+              <h4>AI Improvements</h4>
+              <p>Get targeted suggestions to rewrite bullet points, add missing keywords, and boost your score.</p>
+              <ul>
+                <li> Line-by-line suggestions</li>
+                <li> One-click apply changes</li>
+                <li> Before/after view</li>
+              </ul>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="slide-img-placeholder">
+                <img src="Settings.jpeg" alt="Settings screenshot" loading="lazy" />
+            </div>
+            <div class="slide-caption">
+              <p class="screen-num">SCREEN 6 OF 6</p>
+              <h4>Settings & Profile</h4>
+              <p>Manage your account, notification preferences, and connected integrations.</p>
+              <ul>
+                <li> Profile management</li>
+                <li> API key integrations</li>
+                <li> Notification controls</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="slide-controls">
+          <button class="slide-btn" id="prevBtn">← Prev</button>
+          <div class="slide-dots" id="slideDots"></div>
+          <button class="slide-btn" id="nextBtn">Next →</button>
+        </div>
+      </div>
+
+      <!-- Other Projects Grid (showing 2 non-network projects) -->
+      <div class="projects-grid">
+        <div class="project-card">
+          <div class="card-img-placeholder">
+            <img src="Login page.jpeg" alt="Project screenshot — login UI" loading="lazy" />
+          </div>
+          <div class="card-body">
+            <span class="card-tag">Web App</span>
+            <h4>Auth & UI</h4>
+            <p>Login and authentication UI for ResumePortal, showing the sign-in flow and profile access.</p>
+            <!-- links removed as requested -->
+          </div>
+        </div>
+
+        <!-- Removed ResumePortal — Feature card as requested -->
+      </div>
+
+      <!-- Network Projects: slideshow for network screenshots -->
+      <section id="network-projects" class="network-projects section">
+        <div class="container">
+          <p class="section-eyebrow">— NETWORK PROJECTS</p>
+          <h2 class="section-title">Network Projects</h2>
+
+          <div class="network-slideshow" id="networkSlideshow">
+            <div class="network-slide active">
+              <div class="slide-img-placeholder">
+                <img src="Network diagram.jpeg" alt="Network topology diagram" loading="lazy" />
+              </div>
+              <div class="slide-caption">
+                <p class="screen-num">TOPOLOGY</p>
+                <h4>Enterprise Topology</h4>
+                <p>Topology diagram and VLAN configuration used for campus network lab.</p>
+              </div>
+            </div>
+
+            <div class="network-slide">
+              <div class="slide-img-placeholder">
+                <img src="Network Project.jpeg" alt="Router console screenshot" loading="lazy" />
+              </div>
+              <div class="slide-caption">
+                <p class="screen-num">CONSOLE</p>
+                <h4>Core Switch & DHCP Relay Server</h4>
+                <p>Console output showing routing, pings, and config snippets used during lab verification. Learnt how to configure and troubleshoot network devices as well as understanding of core switches.</p>
+              </div>
+            </div>
+
+            <div class="slide-controls">
+              <button class="slide-btn" id="networkPrevBtn">← Prev</button>
+              <div class="slide-dots" id="networkSlideDots"></div>
+              <button class="slide-btn" id="networkNextBtn">Next →</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="contact section">
+    <div class="container contact-inner">
+      <p class="section-eyebrow">— GET IN TOUCH</p>
+      <h2 class="section-title">Contact Me</h2>
+      <p class="contact-desc">Have a project in mind or just want to connect? Reach out through any of the channels below.</p>
+
+      <div class="contact-cards">
+
+        <a href="mailto:254586Y@mymail.nyp.edu.com" class="contact-card">
+          <div class="contact-card-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="4" width="20" height="16" rx="2"/>
+              <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+            </svg>
+          </div>
+          <div class="contact-card-text">
+            <span class="contact-card-label">Email</span>
+            <span class="contact-card-value">254586Y@mymail.nyp.edu.com</span>
+          </div>
+          <span class="contact-card-arrow">→</span>
+        </a>
+
+        <a href="tel:+6588062728" class="contact-card">
+          <div class="contact-card-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.38 2 2 0 0 1 3.58 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.56a16 16 0 0 0 5.55 5.55l.92-.92a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/>
+            </svg>
+          </div>
+          <div class="contact-card-text">
+            <span class="contact-card-label">Phone</span>
+            <span class="contact-card-value">+65 8806 2728</span>
+          </div>
+          <span class="contact-card-arrow">→</span>
+        </a>
+
+        <a href="https://www.linkedin.com/in/dillon-poh-a4704a2b0/" class="contact-card">
+          <div class="contact-card-icon contact-card-icon--linkedin">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M20.5 2h-17A1.5 1.5 0 002 3.5v17A1.5 1.5 0 003.5 22h17a1.5 1.5 0 001.5-1.5v-17A1.5 1.5 0 0020.5 2zM8 19H5v-9h3zM6.5 8.25A1.75 1.75 0 118.3 6.5a1.78 1.78 0 01-1.8 1.75zM19 19h-3v-4.74c0-1.42-.6-1.93-1.38-1.93A1.74 1.74 0 0013 14.19a.66.66 0 000 .14V19h-3v-9h2.9v1.3a3.11 3.11 0 012.7-1.4c1.55 0 3.36.86 3.36 3.66z"/>
+            </svg>
+          </div>
+          <div class="contact-card-text">
+            <span class="contact-card-label">LinkedIn</span>
+            <span class="contact-card-value">Dillon Poh</span>
+          </div>
+          <span class="contact-card-arrow">→</span>
+        </a>
+
+        <a href="#" class="contact-card">
+          <div class="contact-card-icon contact-card-icon--gitlab">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 380 380" fill="currentColor">
+              <path d="M282.83 170.73l-.27-.69-26.14-68.22a6.81 6.81 0 00-2.69-3.24 7 7 0 00-8 .43 7 7 0 00-2.29 3.53l-17.68 54H154.29l-17.68-54a6.86 6.86 0 00-2.29-3.53 7 7 0 00-8-.43 6.87 6.87 0 00-2.69 3.24L97.44 170l-.26.69a48.54 48.54 0 0016.1 56.1l.09.07.24.17 39.82 29.82 19.7 14.91 12 9.06a8.07 8.07 0 009.19 0l12-9.06 19.7-14.91 40.06-30 .1-.08a48.56 48.56 0 0016.1-56.04z"/>
+            </svg>
+          </div>
+          <div class="contact-card-text">
+            <span class="contact-card-label">GitLab</span>
+            <span class="contact-card-value">@dillonpoh</span>
+          </div>
+          <span class="contact-card-arrow">→</span>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <
